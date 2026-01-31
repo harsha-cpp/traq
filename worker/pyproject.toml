@@ -1,0 +1,10 @@
+[project]
+name = "traq-worker"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "ultralytics>=8.4.9",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+]
