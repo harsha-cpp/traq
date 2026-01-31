@@ -35,5 +35,27 @@ Each run generates:
 - Provides evidence-backed review for violations
 - Supports safer, smarter intersection management
 
+## Folder Structure
+
+```
+.
+├── api/                        # Go REST API
+│   ├── cmd/server/             # Main entrypoint
+│   └── internal/
+│       ├── handlers/           # HTTP handlers
+│       ├── jobs/               # Job model & management
+│       └── storage/            # Filesystem storage
+├── worker/                     # Python YOLO worker
+│   └── worker/run.py           # Worker entrypoint
+├── configs/                    # Job configuration files
+├── inputs/                     # Input videos
+└── runs/                       # Output artifacts per job
+    └── {job_id}/
+        ├── annotated.mp4
+        ├── metrics_queue.csv
+        ├── violations.json
+        └── config_used.json
+```
+
 ## Notes
 This project is designed for **hackathon/demo use** and focuses on **explainable analytics**, not full production deployment.

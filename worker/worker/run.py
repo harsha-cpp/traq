@@ -1,5 +1,3 @@
-"""TRAQ-Vision YOLO Worker - Placeholder"""
-
 from ultralytics import YOLO
 import cv2
 import numpy as np
