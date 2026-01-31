@@ -47,6 +47,8 @@ Each run generates:
 │       └── storage/            # Filesystem storage
 ├── worker/                     # Python YOLO worker
 │   └── worker/run.py           # Worker entrypoint
+├── docs/                       # Documentation
+│   └── TEAM_ORBIT_REPORT.pdf   # Project report
 ├── configs/                    # Job configuration files
 ├── inputs/                     # Input videos
 └── runs/                       # Output artifacts per job
